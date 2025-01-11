@@ -7,12 +7,12 @@
     <!-- turbo_frame_tag: add new form to the page with second_turbo_frame -->
     <%= link_to "New quote",
                 new_quote_path,
-                class: "btn btn--primary", data:{ turbo_frame:"second_turbo_frame"} %>
+                class: "btn btn--primary", data:{ turbo_frame:"_top"} %>
   </div>
 <% end %>
 <!-- turbo_frame_tag: add new form to the page with second_turbo_frame -->
-<%= turbo_frame_tag "second_turbo_frame" do %>
+<%#= turbo_frame_tag "second_turbo_frame" do %>
   <%= render @quotes %>
-<% end %>
+<%# end %>
 
 </main>
