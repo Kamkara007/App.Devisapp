@@ -6,6 +6,7 @@
   <div class="header">
     <h1>Edit quote</h1>
   </div>
-
+<%=  turbo_frame_tag "quote_#{@quote.id}" do %>
   <%= render "form", quote: @quote %>
+<% end %>
 </main>

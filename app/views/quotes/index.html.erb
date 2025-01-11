@@ -1,7 +1,7 @@
 <%# app/views/quotes/index.html.erb %>
 
 <main class="container">
-  <%= turbo_frame_tag "first_turbo_frame" do %>
+  
   <div class="header">
     <h1>Quotes</h1>
    
@@ -9,9 +9,6 @@
                 new_quote_path,
                 class: "btn btn--primary" %>
   </div>
-<% end %>
 
   <%= render @quotes %>
-
-
 </main>
