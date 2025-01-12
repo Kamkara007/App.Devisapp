@@ -5,5 +5,7 @@
     You don't have any quotes yet!
   </p>
 
-  <%= link_to "Add quote", new_quote_path, class: "btn btn--primary" %>
+  <%= link_to "Add quote", new_quote_path,
+    data:{turbo_frame: dom_id(Quote.new)},
+    class: "btn btn--primary" %>
 </div>

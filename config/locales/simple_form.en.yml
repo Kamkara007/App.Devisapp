@@ -15,12 +15,18 @@ en:
     labels:
       quote:
         name: Name
+      line_item_date:
+        date: Date
 
     helpers:
       submit:
         quote:
           create: Create quote
           update: Update quote
+        line_item_date:
+        create: Create date
+        update: Update date
+        
     error_notification:
       default_message: "Please review the problems below:"
     # Examples

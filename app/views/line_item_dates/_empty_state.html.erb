@@ -1,0 +1,12 @@
+<%# app/views/quotes/_empty_state.html.erb %>
+
+<div class="empty-state">
+  <p class="empty-state__text">
+    You don't have any date yet!
+  </p>
+
+  <%= link_to "Add Date", 
+    new_quote_line_item_date_path(@quote),
+    data:{turbo_frame: dom_id(LineItemDate.new)},
+    class: "btn btn--primary" %>
+</div>
