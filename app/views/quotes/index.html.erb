@@ -1,5 +1,5 @@
-<%# app/views/quotes/index.html.erb %>
-<%= turbo_stream_from "quotes" %>
+<%# This line generate the <turbo-cable-stream-source> tag %>
+<%= turbo_stream_from current_company, "quotes" %>
 
 <main class="container">
   

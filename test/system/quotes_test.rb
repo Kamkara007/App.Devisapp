@@ -7,6 +7,7 @@ class QuotesTest < ApplicationSystemTestCase
   #   assert_selector "h1", text: "Quotes"
   # end
   setup do
+    login_as users(:accountant)
     @quote = Quote.ordered.first
   end
 
