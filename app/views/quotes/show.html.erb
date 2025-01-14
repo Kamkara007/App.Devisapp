@@ -1,6 +1,6 @@
 <%# app/views/quotes/show.html.erb %>
 
-<main class="container">
+<main class="container mb-xxxxl">
   <%= link_to sanitize("&larr; Back to quotes"), quotes_path %>
   <div class="header">
     <h1>
@@ -24,3 +24,8 @@
   <% end %>
   
 </main>
+
+<%#= _total.html.erb  %>
+<%= turbo_frame_tag dom_id(@quote, :total) do %>
+  <%= render "quotes/total", quote: @quote %>
+<% end %>

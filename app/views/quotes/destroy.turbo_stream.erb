@@ -2,8 +2,12 @@
 
 <%#=  turbo_stream.remove "quote_#{@quote.id}" %>
 <%=  turbo_stream.remove @quote %>
+
+<%# Flash messages %>
 <%= render_turbo_stream_flash_messages %>
 
+
+<%# the empty state when there are no quotes %>
 <% unless current_company.quotes.exists? %>
     <%=  turbo_stream.update Quote.new do %>
         <%= render "quotes/empty_state" %>

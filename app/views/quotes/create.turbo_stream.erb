@@ -20,7 +20,11 @@
 
 <%#= turbo_stream.update Quote.new, "" %>
 
-
+<%# prepend the new quote to the quotes list %>
 <%= turbo_stream.prepend "quotes", @quote %>
+
+<%#remove the new quote %>
 <%= turbo_stream.update Quote.new, "" %>
+
+<%# flash messages %>
 <%= render_turbo_stream_flash_messages %>
